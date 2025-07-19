@@ -1,0 +1,22 @@
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.sidebar {
+  width: 72px; /* Collapsed width */
+  min-height: 100vh;
+  transition: width 0.3s ease;
+}
+
+.sidebar.extended {
+  width: 240px; /* Expanded width */
+}
+
+.main {
+  flex: 1; /* Take remaining space */
+  min-height: 100vh;
+  overflow-y: auto; /* Allow scrolling for main content */
+}
